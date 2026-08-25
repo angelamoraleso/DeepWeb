@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Harold Felipe Avilan Olaya, Angela Maria Morales Ochoa">
+    <meta name="description" content="Arquitectura técnica, protocolos de enrutamiento y redes anónimas de la Internet Profunda.">
+    <meta name="keywords" content="tor, onion routing, garlic routing, i2p, freenet, criptografia, nodos">
+    <title>Tecnologías y Arquitectura - Deep Web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>ARQUITECTURA Y TECNOLOGÍAS</h1>
+        <p>Protocolos de enrutamiento, cifrado y redes anónimas</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html" style="color: #39ff14; text-decoration: none;">1. Inicio y Fundamentos</a></li>
+            <li><a href="tecnologias.html" style="color: #39ff14; text-decoration: none; font-weight: bold;">2. Tecnologías y Redes</a></li>
+            <li><a href="ciberseguridad.html" style="color: #39ff14; text-decoration: none;">3. Ciberseguridad y Ética</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <section>
+            <h2>Enrutamiento por Capas (Onion Routing)</h2>
+            <p>
+                La tecnología fundamental detrás de la red Tor es el <strong>Onion Routing</strong> (Enrutamiento Cebolla). A diferencia del tráfico web convencional —donde un cliente se conecta directamente a un servidor—, esta técnica envuelve los datos en múltiples capas de cifrado asimétrico.
+            </p>
+            <p>
+                El paquete de datos viaja a través de tres nodos aleatorios antes de alcanzar su destino. Cada nodo desencripta únicamente la capa externa necesaria para conocer la dirección del siguiente salto, garantizando que ningún nodo individual conozca la ruta completa.
+            </p>
+            <figure>
+                <img src="img/network.jpg" alt="Diagrama de nodos de enrutamiento por capas" width="500">
+                <figcaption>Estructura de enrutamiento a través de nodos de entrada, medio y salida.</figcaption>
+            </figure>
+        </section>
+
+        <section>
+            <h2>La Cadena de Nodos en la Red Tor</h2>
+            <table>
+                <caption>Funciones de los Nodos en la Red</caption>
+                <tr>
+                    <th>Tipo de Nodo</th>
+                    <th>Función Principal</th>
+                    <th>Información que Posee</th>
+                </tr>
+                <tr>
+                    <td>Nodo de Entrada (Guard Node)</td>
+                    <td>Recibe la conexión inicial del cliente.</td>
+                    <td>Conoce la IP del usuario, desconoce el destino final.</td>
+                </tr>
+                <tr>
+                    <td>Nodo Intermedio (Relay Node)</td>
+                    <td>Transporta el tráfico cifrado entre capas.</td>
+                    <td>Solo conoce la IP del nodo anterior y del siguiente.</td>
+                </tr>
+                <tr>
+                    <td>Nodo de Salida (Exit Node)</td>
+                    <td>Desencripta la última capa y envía la petición al sitio web.</td>
+                    <td>Conoce la web destino, desconoce la IP del usuario.</td>
+                </tr>
+            </table>
+        </section>
+
+        <article>
+            <h2>Redes Anónimas Alternativas (Darknets)</h2>
+            <p>
+                Aunque Tor es la red oculta más popular, existen otras arquitecturas diseñadas con enfoques y protocolos de seguridad completamente distintos:
+            </p>
+            <ul>
+                <li><strong>I2P (Invisible Internet Project):</strong> Utiliza el protocolo <em>Garlic Routing</em> (Enrutamiento Ajo). A diferencia de Tor, agrupa múltiples mensajes cifrados en un solo paquete y está optimizada para la comunicación entre pares (P2P).</li>
+                <li><strong>Freenet:</strong> Red descentralizada peer-to-peer donde los usuarios comparten espacio en su disco duro para almacenar fragmentos cifrados de información de manera distribuida.</li>
+                <li><strong>ZeroNet:</strong> Utiliza la tecnología de la cadena de bloques (Blockchain) y el protocolo BitTorrent para crear páginas web descentralizadas e inmunes a la censura.</li>
+            </ul>
+        </article>
+
+        <section>
+            <h2>Dominios Cifrados (.onion)</h2>
+            <p>
+                Los enlaces de la Dark Web basados en Tor no utilizan direcciones IP tradicionales ni registros DNS centralizados. En su lugar, emplean dominios de primer nivel sintéticos terminados en <strong>.onion</strong>.
+            </p>
+            <p>
+                Estas direcciones son claves criptográficas públicas codificadas en Base32. La versión v3 de estos dominios consta de 56 caracteres alfanuméricos generados aleatoriamente, garantizando la autenticidad del servidor sin revelar la ubicación física del mismo.
+            </p>
+        </section>
+
+    </main>
+
+    <aside>
+        <h2>Dato Técnico: Cifrado End-to-End</h2>
+        <p>
+            El tráfico dentro de las redes anónimas utiliza cifrado de clave pública (como RSA o curvas elípticas Ed25519) combinado con cifrado simétrico AES-256 para transferir archivos a gran velocidad sin comprometer la identidad.
+        </p>
+    </aside>
+
+    <footer>
+        <p>Trabajo académico sobre la Deep Web &mdash; Universidad Distrital Francisco José de Caldas.</p>
+        <p>Hecho por:</p>
+        <ul>
+            <li><strong>Autor:</strong> Harold Felipe Avilan Olaya - 20232578054</li>
+            <li><strong>Autor:</strong> Angela Maria Morales Ochoa</li>
+        </ul>
+    </footer>
+
+</body>
+
+</html>

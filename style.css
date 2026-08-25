@@ -1,0 +1,194 @@
+/* ===== Estilos generales ===== */
+body {
+    background-color: #0d0d0d;
+    color: #e0e0e0;
+    font-family: "Courier New", monospace;
+    width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #39ff14;
+    text-shadow: 2px 2px 6px #003300;
+}
+
+h1 {
+    font-size: 42px;
+    font-weight: bold;
+    text-align: center;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    border-style: solid;
+    border-color: #39ff14;
+    border-width: 0px 0px 1px 0px;
+    padding: 5px;
+}
+
+p {
+    font-size: 16px;
+    color: #cccccc;
+}
+
+/* ===== Header ===== */
+header {
+    background-color: #111111;
+    border-style: solid;
+    border-color: #39ff14;
+    border-width: 2px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px #003300;
+    padding: 20px;
+    margin: 0px 0px 20px 0px;
+    text-align: center;
+}
+
+header p {
+    color: #39ff14;
+    font-size: 18px;
+}
+
+/* ===== Navegación ===== */
+nav {
+    background-color: #1a0000;
+    border-style: solid;
+    border-color: #660000;
+    border-width: 1px;
+    border-radius: 6px;
+    padding: 10px;
+    margin: 0px 0px 20px 0px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+}
+
+nav li {
+    color: #ff4d4d;
+    padding: 4px;
+    font-size: 14px;
+}
+
+/* ===== Secciones y artículos ===== */
+section, article {
+    background-color: #121212;
+    border-style: solid;
+    border-color: #333333;
+    border-width: 1px;
+    border-radius: 6px;
+    box-shadow: 0px 0px 10px #000000;
+    padding: 20px;
+    margin: 0px 0px 25px 0px;
+}
+
+/* ===== Listas ===== */
+ul {
+    list-style-type: square;
+}
+
+article ul li {
+    color: #cccccc;
+    padding: 4px 0px;
+}
+
+/* ===== Tabla comparativa ===== */
+table {
+    width: 100%;
+    border-style: solid;
+    border-color: #39ff14;
+    border-width: 1px;
+}
+
+caption {
+    color: #39ff14;
+    font-weight: bold;
+    padding: 8px;
+}
+
+th {
+    background-color: #1a1a1a;
+    color: #39ff14;
+    border-style: solid;
+    border-color: #333333;
+    border-width: 1px;
+    padding: 8px;
+    text-align: center;
+}
+
+td {
+    border-style: solid;
+    border-color: #333333;
+    border-width: 1px;
+    padding: 8px;
+    color: #cccccc;
+    text-align: center;
+}
+
+/* ===== Imágenes ===== */
+figure {
+    text-align: center;
+    margin: 15px 0px;
+}
+
+figure img {
+    border-style: solid;
+    border-color: #660000;
+    border-width: 2px;
+    border-radius: 4px;
+    box-shadow: 0px 0px 10px #330000;
+}
+
+figcaption {
+    color: #999999;
+    font-size: 13px;
+    padding: 6px;
+}
+
+/* ===== Aside ===== */
+aside {
+    background-color: #1a0000;
+    border-style: solid;
+    border-color: #8b0000;
+    border-width: 1px;
+    border-radius: 6px;
+    padding: 20px;
+    margin: 0px 0px 25px 0px;
+}
+
+aside h2 {
+    color: #ff4d4d;
+    border-color: #8b0000;
+}
+
+/* ===== Footer ===== */
+footer {
+    background-color: #111111;
+    border-style: solid;
+    border-color: #333333;
+    border-width: 1px;
+    border-radius: 6px;
+    padding: 15px;
+    text-align: center;
+    color: #999999;
+    font-size: 13px;
+}
+
+footer a {
+    color: #39ff14;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+footer a:visited {
+    color: #228b22;
+}
