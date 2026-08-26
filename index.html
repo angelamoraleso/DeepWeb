@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Harold">
+    <meta name="author" content="Harold y Angela">
     <meta name="description"
         content="Página académica informativa sobre la Deep Web, la Dark Web y la seguridad en Internet.">
     <meta name="keywords" content="deep web, dark web, surface web, seguridad informatica, privacidad, internet">
@@ -32,7 +32,8 @@
 
     <main>
 
-        <section>
+        <!-- SECCIÓN 1: DEEP WEB -->
+        <section id="deep-web">
             <h2>¿Qué es la Deep Web?</h2>
             <p>
                 La <strong>Deep Web</strong>, o "internet profunda", es la parte de Internet que
@@ -47,10 +48,24 @@
                 Deep Web, simplemente porque un buscador no puede acceder ni mostrar esa
                 información al público.
             </p>
+
+            <!-- IMAGEN CON MAPA INTERACTIVO -->
             <figure>
-                <img src="img/deepweb.jpg" alt="Representación conceptual de la Deep Web" width="500">
-                <figcaption>El iceberg es la analogía más usada para representar las capas de Internet.</figcaption>
+                <img src="img/deepweb.jpg" alt="Representación conceptual de la Deep Web" usemap="#mapa-iceberg" width="500">
+                <figcaption>Haz clic en cualquier nivel de la imagen para ir directamente a esa sección.</figcaption>
             </figure>
+
+            <!-- DEFINICIÓN DEL MAPA DE IMAGEN -->
+            <map name="mapa-iceberg">
+                <!-- Zona 1: Parte superior del iceberg (Surface Web) -->
+                <area shape="rect" coords="0,0,500,150" href="#capas-web" alt="Surface Web" title="Ir a la comparación de capas">
+                
+                <!-- Zona 2: Parte media sumergida (Deep Web) -->
+                <area shape="rect" coords="0,151,500,320" href="#deep-web" alt="Deep Web" title="Ir a ¿Qué es la Deep Web?">
+                
+                <!-- Zona 3: Base del iceberg (Dark Web y Riesgos) -->
+                <area shape="rect" coords="0,321,500,500" href="#riesgos-seguridad" alt="Dark Web" title="Ir a Riesgos y Seguridad">
+            </map>
         </section>
 
         <section>
@@ -80,7 +95,8 @@
             </section>
         </section>
 
-        <section>
+        <!-- SECCIÓN 2: SURFACE WEB Y TABLA COMPARATIVA -->
+        <section id="capas-web">
             <h2>Surface Web, Deep Web y Dark Web</h2>
             <table>
                 <caption>Comparación de las capas de Internet</caption>
@@ -133,7 +149,8 @@
             </ul>
         </section>
 
-        <section>
+        <!-- SECCIÓN 3: RIESGOS Y DARK WEB -->
+        <section id="riesgos-seguridad">
             <h2>Riesgos y seguridad</h2>
             <p>
                 La Dark Web, en particular, concentra riesgos importantes: mercados de bienes
@@ -185,7 +202,7 @@
 
     <footer>
         <p>Trabajo académico sobre la Deep Web &mdash; Universidad Distrital Francisco José de Caldas.</p>
-        <p>Más información:
+        <p>Más información:</p>
         <ul>
             <li>
                 <a href="https://www.crowdstrike.com/es-es/cybersecurity-101/threat-intelligence/dark-web-vs-deep-web/"
@@ -196,13 +213,14 @@
                     frente a Deep Web</a>
             </li>
             <li>
-                <a href="https://es.wikipedia.org/wiki/Internet_profunda" target="_blank">Internet profunda
+                <a href="https://es.wikipedia.org/wiki/Internet_profunda" target="_blank">Internet profunda</a>
             </li>
         </ul>
         <p>Hecho por:</p>
         <ul>
             <li><strong>Autor:</strong> Harold Felipe Avilan Olaya - 20232578054</li>
             <li><strong>Autor:</strong> Angela Maria Morales Ochoa</li>
+        </ul>
     </footer>
 
 </body>

@@ -31,7 +31,8 @@
 
     <main>
 
-        <section>
+        <!-- SECCIÓN 1: USO LEGÍTIMO Y DERECHOS HUMANOS -->
+        <section id="uso-legitimo">
             <h2>Uso Legítimo: Privacidad y Derechos Humanos</h2>
             <p>
                 A menudo se asocia el anonimato únicamente con actividades ilícitas. Sin embargo, las redes de
@@ -52,7 +53,8 @@
             </ul>
         </section>
 
-        <section>
+        <!-- SECCIÓN 2: HERRAMIENTAS DE PROTECCIÓN DIGITAL -->
+        <section id="herramientas">
             <h2>Herramientas Fundamentales de Protección Digital</h2>
             <table>
                 <caption>Ecosistema de Herramientas de Privacidad</caption>
@@ -99,17 +101,33 @@
                 controle la infraestructura y no requiere confiar en un solo punto, ya que ningún servidor conoce la
                 cadena completa.
             </p>
+
+            <!-- IMAGEN CON MAPA INTERACTIVO -->
             <figure>
-                <img src="img/security.jpg" alt="Ilustración sobre seguridad y privacidad digital" width="500">
-                <figcaption>La combinación de herramientas de cifrado reduce drásticamente la superficie de ataque.
+                <img src="img/security.jpg" alt="Ilustración sobre seguridad y privacidad digital" usemap="#mapa-seguridad" width="500">
+                <figcaption>Haz clic en cualquier área de la imagen para ir a esa sección temática.
                 </figcaption>
             </figure>
+
+            <!-- MAPA DE IMAGEN CONFIGURADO -->
+            <map name="mapa-seguridad">
+                <!-- Zona 1: Parte superior (Uso Legítimo) -->
+                <area shape="rect" coords="0,0,500,160" href="#uso-legitimo" alt="Uso Legítimo" title="Ir a Uso Legítimo y Derechos Humanos">
+                
+                <!-- Zona 2: Parte media (Herramientas de Protección) -->
+                <area shape="rect" coords="0,161,500,330" href="#herramientas" alt="Herramientas" title="Ir a Herramientas de Protección">
+                
+                <!-- Zona 3: Parte inferior (Protocolo OpSec) -->
+                <area shape="rect" coords="0,331,500,500" href="#opsec" alt="Protocolo OpSec" title="Ir a Protocolo de Seguridad Operativa">
+            </map>
+
             <h2>Video explicativo</h2>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/B98fTiL5Jfw?si=pKgHZByJ8aYrOqmr"
                 title="EL SECRETO para SER INVISIBLE en INTERNET 🔥 | VPN, TOR y DEEP WEB EXPLICADOS"></iframe>
         </article>
 
-        <section>
+        <!-- SECCIÓN 3: OPSEC -->
+        <section id="opsec">
             <h2>Protocolo de Seguridad Operativa (OpSec)</h2>
             <p>
                 La tecnología de cifrado puede ser inquebrantable, pero el error humano suele ser el eslabón más débil.
