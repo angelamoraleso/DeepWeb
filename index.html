@@ -30,175 +30,195 @@
         </ul>
     </nav>
 
-    <main>
+    <div class="contenedor-principal">
+        <main>
 
-        <!-- SECCIÓN 1: DEEP WEB -->
-        <section id="deep-web">
-            <h2>¿Qué es la Deep Web?</h2>
-            <p>
-                La <strong>Deep Web</strong>, o "internet profunda", es la parte de Internet que
-                <em>no</em> está indexada por los motores de búsqueda tradicionales como Google
-                o Bing. Esto no significa que sea un lugar secreto o exclusivamente ilegal: en
-                realidad, la mayoría de su contenido es totalmente cotidiano.
-            </p>
-            <p>
-                Bases de datos académicas, correos electrónicos privados, historiales médicos,
-                plataformas de streaming con contenido bajo suscripción, intranets corporativas
-                y bandejas de correo son ejemplos comunes de contenido que forma parte de la
-                Deep Web, simplemente porque un buscador no puede acceder ni mostrar esa
-                información al público.
-            </p>
+            <!-- SECCIÓN 1: DEEP WEB -->
+            <section id="deep-web">
+                <h2>¿Qué es la Deep Web?</h2>
+                <p>
+                    La <strong>Deep Web</strong>, o "internet profunda", es la parte de Internet que
+                    <em>no</em> está indexada por los motores de búsqueda tradicionales como Google
+                    o Bing. Esto no significa que sea un lugar secreto o exclusivamente ilegal: en
+                    realidad, la mayoría de su contenido es totalmente cotidiano.
+                </p>
+                <p>
+                    Bases de datos académicas, correos electrónicos privados, historiales médicos,
+                    plataformas de streaming con contenido bajo suscripción, intranets corporativas
+                    y bandejas de correo son ejemplos comunes de contenido que forma parte de la
+                    Deep Web, simplemente porque un buscador no puede acceder ni mostrar esa
+                    información al público.
+                </p>
 
-            <!-- IMAGEN CON MAPA INTERACTIVO -->
-            <figure>
-                <img src="img/deepweb.jpg" alt="Representación conceptual de la Deep Web" usemap="#mapa-iceberg" width="500">
-                <figcaption>Haz clic en cualquier nivel de la imagen para ir directamente a esa sección.</figcaption>
-            </figure>
+                <!-- IMAGEN CON MAPA INTERACTIVO -->
+                <figure class="flotante-izquierda">
+                    <img src="img/deepweb.jpg" alt="Representación conceptual de la Deep Web" usemap="#mapa-iceberg"
+                        width="280">
+                    <figcaption>Haz clic en cualquier nivel de la imagen para ir directamente a esa sección.
+                    </figcaption>
+                </figure>
 
-            <!-- DEFINICIÓN DEL MAPA DE IMAGEN -->
-            <map name="mapa-iceberg">
-                <!-- Zona 1: Parte superior del iceberg (Surface Web) -->
-                <area shape="rect" coords="0,0,500,150" href="#capas-web" alt="Surface Web" title="Ir a la comparación de capas">
-                
-                <!-- Zona 2: Parte media sumergida (Deep Web) -->
-                <area shape="rect" coords="0,151,500,320" href="#deep-web" alt="Deep Web" title="Ir a ¿Qué es la Deep Web?">
-                
-                <!-- Zona 3: Base del iceberg (Dark Web y Riesgos) -->
-                <area shape="rect" coords="0,321,500,500" href="#riesgos-seguridad" alt="Dark Web" title="Ir a Riesgos y Seguridad">
-            </map>
-        </section>
+                <!-- DEFINICIÓN DEL MAPA DE IMAGEN -->
+                <map name="mapa-iceberg">
+                    <!-- Zona 1: Parte superior del iceberg (Surface Web) -->
+                    <area shape="rect" coords="0,0,280,84" href="#capas-web" alt="Surface Web"
+                        title="Ir a la comparación de capas">
 
-        <section>
-            <h2>¿En qué consiste? ¿Cómo funciona conceptualmente?</h2>
-            <p>
-                Internet puede pensarse como un enorme iceberg. La parte visible sobre el agua
-                es la <strong>Surface Web</strong>: todo lo que un buscador puede rastrear e
-                indexar. Bajo la superficie está la <strong>Deep Web</strong>, contenido que
-                existe pero que requiere una contraseña, un formulario o un enlace directo para
-                acceder a él.
-            </p>
-            <p>
-                Dentro de esa capa profunda existe una porción mucho más pequeña conocida como
-                <strong>Dark Web</strong>, a la que solo se puede acceder mediante software
-                especializado que cifra y anonimiza las conexiones, redirigiendo el tráfico a
-                través de múltiples servidores (nodos) alrededor del mundo antes de llegar a su
-                destino.
-            </p>
-            <figure>
-                <img src="img/network.jpg" alt="Red de servidores y nodos interconectados" width="500">
-                <figcaption>El tráfico se enruta a través de varios nodos para preservar el anonimato.</figcaption>
-            </figure>
-            <section>
-                <h2>Video explicativo</h2>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/PLU2d4EkPwE"
-                    title="Video sobre la Deep Web"></iframe>
+                    <!-- Zona 2: Parte media sumergida (Deep Web) -->
+                    <area shape="rect" coords="0,85,280,179" href="#deep-web" alt="Deep Web"
+                        title="Ir a ¿Qué es la Deep Web?">
+
+                    <!-- Zona 3: Base del iceberg (Dark Web y Riesgos) -->
+                    <area shape="rect" coords="0,180,280,280" href="#riesgos-seguridad" alt="Dark Web"
+                        title="Ir a Riesgos y Seguridad">
+                </map>
+
+                <p class="romper-flotante">
+                    Por eso decimos que la Deep Web no es un lugar oculto ni prohibido en sí mismo,
+                    sino simplemente la parte de Internet que un buscador no puede alcanzar.
+                </p>
             </section>
-        </section>
 
-        <!-- SECCIÓN 2: SURFACE WEB Y TABLA COMPARATIVA -->
-        <section id="capas-web">
-            <h2>Surface Web, Deep Web y Dark Web</h2>
-            <table>
-                <caption>Comparación de las capas de Internet</caption>
-                <tr>
-                    <th>Capa</th>
-                    <th>Acceso</th>
-                    <th>Ejemplos</th>
-                </tr>
-                <tr>
-                    <td>Surface Web</td>
-                    <td>Buscadores normales (Google, Bing)</td>
-                    <td>Noticias, redes sociales, blogs</td>
-                </tr>
-                <tr>
-                    <td>Deep Web</td>
-                    <td>Requiere inicio de sesión o enlace directo</td>
-                    <td>Correo, banca en línea, bases de datos académicas</td>
-                </tr>
-                <tr>
-                    <td>Dark Web</td>
-                    <td>Software especializado de anonimato</td>
-                    <td>Foros cifrados, publicaciones anónimas</td>
-                </tr>
-            </table>
-        </section>
+            <section>
+                <h2>¿En qué consiste? ¿Cómo funciona conceptualmente?</h2>
+                <p>
+                    Internet puede pensarse como un enorme iceberg. La parte visible sobre el agua
+                    es la <strong>Surface Web</strong>: todo lo que un buscador puede rastrear e
+                    indexar. Bajo la superficie está la <strong>Deep Web</strong>, contenido que
+                    existe pero que requiere una contraseña, un formulario o un enlace directo para
+                    acceder a él.
+                </p>
+                <p>
+                    Dentro de esa capa profunda existe una porción mucho más pequeña conocida como
+                    <strong>Dark Web</strong>, a la que solo se puede acceder mediante software
+                    especializado que cifra y anonimiza las conexiones, redirigiendo el tráfico a
+                    través de múltiples servidores (nodos) alrededor del mundo antes de llegar a su
+                    destino.
+                </p>
+                <figure>
+                    <img src="img/network.jpg" alt="Red de servidores y nodos interconectados" width="500">
+                    <figcaption>El tráfico se enruta a través de varios nodos para preservar el anonimato.</figcaption>
+                </figure>
+                <section>
+                    <h2>Video explicativo</h2>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/PLU2d4EkPwE"
+                        title="Video sobre la Deep Web"></iframe>
+                </section>
+            </section>
 
-        <article>
-            <h2>Datos curiosos</h2>
-            <ul>
-                <li>Se estima que la Surface Web representa apenas una pequeña fracción del contenido total de Internet.
-                </li>
-                <li>La Dark Web nació de un proyecto de la Marina de los Estados Unidos para comunicaciones anónimas
-                    seguras.</li>
-                <li>No toda la Deep Web requiere software especial: tu bandeja de correo ya forma parte de ella.</li>
-                <li>Existen bibliotecas académicas, archivos históricos y foros científicos alojados exclusivamente en
-                    la Deep Web.</li>
-            </ul>
-        </article>
+            <!-- SECCIÓN 2: SURFACE WEB Y TABLA COMPARATIVA -->
+            <section id="capas-web">
+                <h2>Surface Web, Deep Web y Dark Web</h2>
+                <table>
+                    <caption>Comparación de las capas de Internet</caption>
+                    <tr>
+                        <th>Capa</th>
+                        <th>Acceso</th>
+                        <th>Ejemplos</th>
+                    </tr>
+                    <tr>
+                        <td>Surface Web</td>
+                        <td>Buscadores normales (Google, Bing)</td>
+                        <td>Noticias, redes sociales, blogs</td>
+                    </tr>
+                    <tr>
+                        <td>Deep Web</td>
+                        <td>Requiere inicio de sesión o enlace directo</td>
+                        <td>Correo, banca en línea, bases de datos académicas</td>
+                    </tr>
+                    <tr>
+                        <td>Dark Web</td>
+                        <td>Software especializado de anonimato</td>
+                        <td>Foros cifrados, publicaciones anónimas</td>
+                    </tr>
+                </table>
+            </section>
 
-        <section>
-            <h2>Mitos y realidades</h2>
-            <ul>
-                <li><strong>Mito:</strong> Toda la Deep Web es ilegal. <br><strong>Realidad:</strong> La mayor parte es
-                    contenido cotidiano y legítimo, solo que no está indexado.</li>
-                <li><strong>Mito:</strong> Entrar a la Deep Web es un delito. <br><strong>Realidad:</strong> Acceder a
-                    contenido no indexado no es ilegal por sí mismo; lo ilegal depende de la actividad que se realice.
-                </li>
-                <li><strong>Mito:</strong> Deep Web y Dark Web son lo mismo. <br><strong>Realidad:</strong> La Dark Web
-                    es solo una pequeña porción dentro de la Deep Web.</li>
-            </ul>
-        </section>
+            <article>
+                <h2>Datos curiosos</h2>
+                <ul>
+                    <li>Se estima que la Surface Web representa apenas una pequeña fracción del contenido total de
+                        Internet.
+                    </li>
+                    <li>La Dark Web nació de un proyecto de la Marina de los Estados Unidos para comunicaciones anónimas
+                        seguras.</li>
+                    <li>No toda la Deep Web requiere software especial: tu bandeja de correo ya forma parte de ella.
+                    </li>
+                    <li>Existen bibliotecas académicas, archivos históricos y foros científicos alojados exclusivamente
+                        en
+                        la Deep Web.</li>
+                </ul>
+            </article>
 
-        <!-- SECCIÓN 3: RIESGOS Y DARK WEB -->
-        <section id="riesgos-seguridad">
-            <h2>Riesgos y seguridad</h2>
+            <section>
+                <h2>Mitos y realidades</h2>
+                <ul>
+                    <li><strong>Mito:</strong> Toda la Deep Web es ilegal. <br><strong>Realidad:</strong> La mayor parte
+                        es
+                        contenido cotidiano y legítimo, solo que no está indexado.</li>
+                    <li><strong>Mito:</strong> Entrar a la Deep Web es un delito. <br><strong>Realidad:</strong> Acceder
+                        a
+                        contenido no indexado no es ilegal por sí mismo; lo ilegal depende de la actividad que se
+                        realice.
+                    </li>
+                    <li><strong>Mito:</strong> Deep Web y Dark Web son lo mismo. <br><strong>Realidad:</strong> La Dark
+                        Web
+                        es solo una pequeña porción dentro de la Deep Web.</li>
+                </ul>
+            </section>
+
+            <!-- SECCIÓN 3: RIESGOS Y DARK WEB -->
+            <section id="riesgos-seguridad">
+                <h2>Riesgos y seguridad</h2>
+                <p>
+                    La Dark Web, en particular, concentra riesgos importantes: mercados de bienes
+                    ilegales, estafas, contenido malicioso y foros vinculados a actividades
+                    delictivas. También existen amenazas técnicas como malware disfrazado de
+                    archivos legítimos y sitios diseñados para robar información personal.
+                </p>
+                <p>
+                    Por eso es fundamental proteger la privacidad: usar contraseñas seguras, evitar
+                    compartir datos sensibles, mantener el software actualizado y desconfiar de
+                    enlaces o descargas de origen desconocido son prácticas básicas de seguridad en
+                    cualquier capa de Internet.
+                </p>
+                <figure>
+                    <img src="img/security.jpg" alt="Concepto de seguridad informática" width="500">
+                    <figcaption>La seguridad y la privacidad son responsabilidad de cada usuario.</figcaption>
+                </figure>
+                <h2>Video explicativo</h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/85f__T6HktI?si=AeKXtIqGdv402_8x"
+                    title="YouTube video player"></iframe>
+            </section>
+
+            <article>
+                <h2>Evolución de Internet</h2>
+                <p>
+                    Internet comenzó como una red académica y militar limitada. Con el tiempo se
+                    popularizó y creció exponencialmente, dando lugar a la Surface Web que
+                    conocemos hoy. Sin embargo, a medida que aumentaba la necesidad de privacidad,
+                    de bases de datos privadas y de comunicaciones seguras, surgieron naturalmente
+                    las capas más profundas de la red, incluyendo las herramientas de anonimato que
+                    hoy sustentan la Dark Web.
+                </p>
+                <figure>
+                    <img src="img/servers.jpg" alt="Servidores que sostienen la infraestructura de Internet"
+                        width="500">
+                    <figcaption>La infraestructura de servidores ha sido clave en la evolución de Internet.</figcaption>
+                </figure>
+            </article>
+        </main>
+
+        <aside>
+            <h2>Privacidad y seguridad</h2>
             <p>
-                La Dark Web, en particular, concentra riesgos importantes: mercados de bienes
-                ilegales, estafas, contenido malicioso y foros vinculados a actividades
-                delictivas. También existen amenazas técnicas como malware disfrazado de
-                archivos legítimos y sitios diseñados para robar información personal.
+                Independientemente de qué capa de Internet se use, proteger la información personal
+                es responsabilidad de cada usuario. Revisa siempre los permisos que otorgas a las
+                aplicaciones, usa contraseñas distintas para cada servicio y mantente informado
+                sobre buenas prácticas de seguridad digital.
             </p>
-            <p>
-                Por eso es fundamental proteger la privacidad: usar contraseñas seguras, evitar
-                compartir datos sensibles, mantener el software actualizado y desconfiar de
-                enlaces o descargas de origen desconocido son prácticas básicas de seguridad en
-                cualquier capa de Internet.
-            </p>
-            <figure>
-                <img src="img/security.jpg" alt="Concepto de seguridad informática" width="500">
-                <figcaption>La seguridad y la privacidad son responsabilidad de cada usuario.</figcaption>
-            </figure>
-            <h2>Video explicativo</h2>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/85f__T6HktI?si=AeKXtIqGdv402_8x"
-                title="YouTube video player"></iframe>
-        </section>
-
-        <article>
-            <h2>Evolución de Internet</h2>
-            <p>
-                Internet comenzó como una red académica y militar limitada. Con el tiempo se
-                popularizó y creció exponencialmente, dando lugar a la Surface Web que
-                conocemos hoy. Sin embargo, a medida que aumentaba la necesidad de privacidad,
-                de bases de datos privadas y de comunicaciones seguras, surgieron naturalmente
-                las capas más profundas de la red, incluyendo las herramientas de anonimato que
-                hoy sustentan la Dark Web.
-            </p>
-            <figure>
-                <img src="img/servers.jpg" alt="Servidores que sostienen la infraestructura de Internet" width="500">
-                <figcaption>La infraestructura de servidores ha sido clave en la evolución de Internet.</figcaption>
-            </figure>
-        </article>
-    </main>
-
-    <aside>
-        <h2>Privacidad y seguridad</h2>
-        <p>
-            Independientemente de qué capa de Internet se use, proteger la información personal
-            es responsabilidad de cada usuario. Revisa siempre los permisos que otorgas a las
-            aplicaciones, usa contraseñas distintas para cada servicio y mantente informado
-            sobre buenas prácticas de seguridad digital.
-        </p>
-    </aside>
+        </aside>
+    </div>
 
     <footer>
         <p>Trabajo académico sobre la Deep Web &mdash; Universidad Distrital Francisco José de Caldas.</p>

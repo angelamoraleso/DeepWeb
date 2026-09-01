@@ -8,7 +8,8 @@ body {
     padding: 20px;
 }
 
-h1, h2 {
+h1,
+h2 {
     color: #39ff14;
     text-shadow: 2px 2px 6px #003300;
 }
@@ -60,23 +61,56 @@ nav {
     border-radius: 6px;
     padding: 10px;
     margin: 0px 0px 20px 0px;
+    position: sticky;
+    top: 0px;
 }
 
 nav ul {
     list-style-type: none;
     padding: 0px;
     margin: 0px;
-    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
 }
 
 nav li {
     color: #ff4d4d;
-    padding: 4px;
+    padding: 4px 8px;
     font-size: 14px;
 }
 
+/* ===== Contenedor principal (main + aside en columnas con flexbox) ===== */
+.contenedor-principal {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+main {
+    flex: 3 1 500px;
+}
+
+aside {
+    flex: 1 1 250px;
+}
+
+/* ===== Imagen flotante con texto alrededor ===== */
+.flotante-izquierda {
+    float: left;
+    margin: 0px 15px 10px 0px;
+}
+
+.romper-flotante {
+    clear: left;
+}
+
 /* ===== Secciones y artículos ===== */
-section, article {
+section,
+article {
     background-color: #121212;
     border-style: solid;
     border-color: #333333;
